@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRAVYN - SOVA - PROJETO FINAL</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- excluir -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <img src="assets/logo_sova.png" id="logo" name="logo">
+        <div class="navbar">
+            <img src="assets/plus.svg" id="botao-de-criar" name="criar">
+            <a href="#criar"id="escolher-lugar" name="qualquer-lugar">Criar Evento</a>
+            <div class="linha-vertical"></div>
+            <a href="mailto:sovaprojetofinal@gmail.com?subject=Olá%20SOVA%20&body=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços." id="botao-de-contatar">
+                <img src="assets/mensagem.svg" id="botao-de-contatar" alt="Contatar">
+            </a>
+            <a href="mailto:seuemail@exemplo.com?subject=Quero%20saber%20mais&body=Olá,%20gostaria%20de%20saber%20mais%20sobre%20seus%20serviços." id="cri">Contate-nos</a>
+        </div>
+    </header>
+
+    <section class="tela inicial">
+        <div class="texto">
+            <h1>Encontre o que você precisa<br>quando precisar<br>usando o SOVA</h1>
+            <div class="botoes">
+                <a href="#criar" class="contratar" style="text-decoration:none; display:inline-block;">Contratar</a>
+                <a href="#modeli" class="conheca" style="text-decoration:none; display:inline-block;">Conheça o SOVA</a>
+            </div>
+        </div>
+        <div class="imagem">
+            <img src="assets/dashbord.png" alt="Interface SOVA" />
+        </div>
+    </section>
+
+    <section class="conhecer">
+        <a href="#feedbacks" class="botaozinho">CONHEÇA</a>
+        <a href="#modeli" class="ver-modelos">Ver todos os modelos</a>
+    </section>
+
+    <section class="modelos" id="modeli">
+        <!-- Botões de seleção -->
+        <div class="menu">
+            <input type="radio" name="categoria" id="eventos" checked>
+            <label for="eventos" id="separar">Eventos</label>
+            <input type="radio" name="categoria" id="modelos">
+            <label for="modelos" id="separar">Buffet</label>
+            <input type="radio" name="categoria" id="locacoes">
+            <label for="locacoes" id="separar">Exposições</label>
+        </div>
+    </section>
+
+    <section id="menu">
+        <!-- Galerias -->
+        <div class="conteudo">
+            <div class="galeria" id="galeria-eventos">
+                <img src="assets/evento1.jpg" class="foto" alt="Evento 1">
+                <img src="assets/evento2.jpg" class="foto" alt="Evento 2">
+                <img src="assets/evento3.jpg" class="foto" alt="Evento 3">
+            </div>
+            <div class="galeria" id="galeria-modelos" style="display: none;">
+                <img src="assets/buffet1.jpg" class="foto" alt="Modelo 1">
+                <img src="assets/buffet2.jpg" class="foto" alt="Modelo 2">
+                <img src="assets/buffet3.jpg" class="foto" alt="Modelo 3">
+            </div>
+            <div class="galeria" id="galeria-locacoes" style="display: none;">
+                <img src="assets/exposi1.jpg" class="foto" alt="Locação 1">
+                <img src="assets/exposi2.jpg" class="foto" alt="Locação 2">
+                <img src="assets/exposi3.jpg" class="foto" alt="Locação 3">
+            </div>
+        </div>
+    </section>
+
+    <section class="feedbacks" id="feedbacks">
+        <video width="640" height="360" controls>
+            <source src="assets/feedback.mp4" type="video/mp4"/>Seu navegador não suporta o elemento de vídeo.
+        </video>
+        <div class="text-container">
+            <h1 name="texto-aprovacao" class="aprovacao">Feedbacks de quem usou e aprovou</h1>
+            <h3 name="" class="sub-texto-aprovacao">Descubra o impacto positivo que nossos eventos têm causado. Não acredite apenas em nossas palavras - ouça diretamente dos nossos clientes como conseguimos transformar a experiência deles</h3>   
+        </div>
+    </section>
+    
+    <section class="resultados" name="resultados">
+        <h1 id="nossos-resultados" name="titulo-resultados">Nossos resultados</h1>
+        <h3 id="sub-resultados" name="subtitulo-resultados">Nosso trabalho ja resultou em eventos de diversos segmentos. Construimos uma base sólida de usuários.</h3>
+        <div aria-label="Resultados" class="container-flex">
+            <div class="icon-text-group">
+                <img class="icones-resultados" height="56" name="icones" src="assets/user.svg" width="56"/>
+                <h2 name="texto-cadastro">+120.000<br/>Usuários Cadastrados</h2>
+            </div>
+            <div class="icon-text-group">
+                <img class="icones-ingressos" height="56" name="icones" src="assets/ticket.svg" width="56"/>
+                <h2 name="texto-ingresso">+100.000<br/>Ingressos vendidos</h2>
+            </div>
+            <div class="icon-text-group">
+                <img class="icones-eventos" height="56" name="icones" src="assets/plusroxo.svg" width="56"/>
+                <h2 name="texto-eventos">+5.600<br/>Eventos organizados</h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="criar" id="criar">
+        <div class="container">
+            <iframe src="https://www.google.com/maps/d/embed?mid=1gy6dVeN-GqzZx-6SGrkTOp4z9T7FtpM&ehbc=2E312F" width="650" height="430"></iframe>
+            <div class="image-container"></div>
+            <form id="contactForm">
+                <div class="radio-grid">
+                    <label>
+                        <img src="assets/localização.svg" alt="Localização" />
+                        São Paulo
+                        <input type="radio" name="lugar" value="São Paulo" checked />
+                    </label>
+                    <label>
+                        <img src="assets/localização.svg" alt="Localização" />
+                        Amazonas
+                        <input type="radio" name="lugar" value="Amazonas" />
+                    </label>
+                    <label>
+                        <img src="assets/localização.svg" alt="Localização" />
+                        Rio de Janeiro
+                        <input type="radio" name="lugar" value="Rio de Janeiro" />
+                    </label>
+                    <label>
+                        <img src="assets/localização.svg" alt="Localização" />
+                        Rio Grande do Sul
+                        <input type="radio" name="lugar" value="Rio Grande do Sul" />
+                    </label>
+                    <label>
+                        <img src="assets/localização.svg" alt="Localização" />
+                        Minas Gerais
+                        <input type="radio" name="lugar" value="Minas Gerais" />
+                    </label>
+                </div>
+                <hr/>
+                <div class="checkbox-row">
+                    <label>
+                        <input type="checkbox" name="servicos" value="Buffet" />
+                        Buffet
+                    </label>
+                    <label>
+                        <input type="checkbox" name="servicos" value="Exposições" />
+                        Exposições
+                    </label>
+                    <label>
+                        <input type="checkbox" name="servicos" value="Eventos" />
+                        Eventos
+                    </label>
+                </div>
+                <textarea id="mensagem" placeholder="Digite aqui..."></textarea>
+                <div class="btn-container">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <section class="sobre-nos-container">
+        <h1 class="sobre-nos-container__title">Sobre nós</h1>
+        <div class="sobre-nos-container__cards">
+            <article class="sobre-nos-container__card">
+                <header class="sobre-nos-container__card-header">Missão</header>
+                <p class="sobre-nos-container__card-content">
+                    Oferecer eventos sofisticados e personalizados, criando experiências inesquecíveis para clientes que exigem o melhor em cada detalhe.
+                </p>
+            </article>
+            <article class="sobre-nos-container__card">
+                <header class="sobre-nos-container__card-header">Visão</header>
+                <p class="sobre-nos-container__card-content">
+                    Ser a principal referência em organização de eventos de luxo, reconhecida pela qualidade, inovação e atendimento impecável.
+                </p>
+            </article>
+            <article class="sobre-nos-container__card">
+                <header class="sobre-nos-container__card-header">Valores</header>
+                <p class="sobre-nos-container__card-content">
+                    Buscamos a excelência, a personalização e a inovação em tudo que fazemos. Valorizamos o comprometimento, a sofisticação e a confiança para entregar eventos únicos e memoráveis.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <section class="FAQ">
+        <div class="left-box">
+            <h1>Duvidas Frequentes</h1>
+            <h2>Quer começar e não sabe como? Confira as dúvidas e veja como o SOVA pode te ajudar.</h2>
+            <div class="email-container">
+                <img alt="Ícone de envelope de email azul" height="16" src="assets/email.svg" width="16"/>
+                <h3 style="margin:0; font-weight:400; font-size:12px;">sovaprojetofinal@gmail.com</h3>
+            </div>
+        </div>
+        <div class="right-box">
+            <div class="faq-item" id="faq1">
+                <div class="question">
+                    <h1>01 - Como o SOVA pode te ajudar?</h1>
+                    <button aria-controls="answer1" aria-expanded="false" aria-label="Expandir pergunta 1" name="expandir-1">+</button>
+                </div>
+                <p class="answer" id="answer1">O SOVA pode te ajudar oferecendo suporte personalizado e orientação para que você comece com segurança e confiança.</p>
+            </div>
+            <div class="faq-item" id="faq2">
+                <div class="question">
+                    <h1>02 - Como o sova funciona na pratica?</h1>
+                    <button aria-controls="answer2" aria-expanded="false" aria-label="Expandir pergunta 2" name="expandir-2">+</button>
+                </div>
+                <p class="answer" id="answer2">Na prática, o SOVA funciona através de uma plataforma intuitiva que conecta você a recursos e suporte para facilitar seu aprendizado e uso.</p>
+            </div>
+            <div class="faq-item" id="faq3">
+                <div class="question">
+                    <h1>03 - Posso entrar em contato em caso de mais duvidas?</h1>
+                    <button aria-controls="answer3" aria-expanded="false" aria-label="Expandir pergunta 3" name="expandir-3">+</button>
+                </div>
+                <p class="answer" id="answer3">Sim, você pode entrar em contato pelo email fornecido para esclarecer quaisquer dúvidas adicionais que tiver.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <nav class="social-icons" aria-label="Redes sociais">
+            <a href="#" aria-label="Facebook">
+                <img src="assets/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/sova_dtf/" target="_blank" aria-label="Instagram">
+                <img src="assets/instagram.svg" alt="Instagram">
+            </a>
+
+            <a href="https://www.youtube.com/@SOVA-Event" target="_blank" aria-label="YouTube">
+                <img src="assets/youtube.svg" alt="YouTube">
+            </a>
+            <a href="https://wa.me/5511981125234?text=Opá,%20Estou%20interessado%20no%20serviço%20da%20SOVA%20queria%20mais%20informações!" target="_blank" aria-label="WhatsApp">
+                <img src="assets/whatsapp.svg" alt="WhatsApp">
+            </a>
+            <a href="mailto:sovaprojetofinal@gmail.com?subject=Opa, gostaria de saber mais informações&body=Olá, gostaria de saber mais sobre seus serviços." target="_blank" aria-label="Email">
+                <img src="assets/email.svg" alt="Gmail">
+            </a>
+            <a href="https://x.com/SOVA_Event" target="_blank" aria-label="X">
+                <img src="assets/twitter.svg" alt="Twitter X">
+            </a>
+        </nav>
+        <div class="divider" aria-hidden="true"></div>
+        <p class="copyright">© 2025 SOVA. Todas os direitos reservados.</p>
+        <!-- adicionar a imagem do bravyn -->
+        <img
+            src="https://storage.googleapis.com/a1aa/image/21c025e8-9f9e-42c6-6990-0ad8db211631.jpg"
+            alt="Bravyn logo com formas geométricas vermelhas e bege e texto BRAVYN em vermelho com fonte Montserrat"
+            class="logo"
+            width="40"
+            height="40"
+        />
+    </footer>
+
+    <button id="btnTopo" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src="js/script.js"></script>
+</body>
+</html>
