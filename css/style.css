@@ -644,7 +644,7 @@ section.FAQ > div.right-box .faq-item.active .answer {
 footer {
   background-color: #161445;
   margin: 0 auto;
-  padding: 12px 24px;
+  padding: 12px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -673,7 +673,7 @@ footer {
 .divider {
   height: 24px;
   border-left: 1px solid #999999;
-  margin: 0 24px;
+  margin-inline: 0 10px;
 }
 .copyright {
   font-size: 12px;
@@ -685,7 +685,7 @@ footer {
   height: 40px;
   object-fit: contain;
   font-family: 'Montserrat', sans-serif;
-  margin-left: 24px;
+  margin-right: 50px;
 }
 #btnTopo {
   position: fixed;
